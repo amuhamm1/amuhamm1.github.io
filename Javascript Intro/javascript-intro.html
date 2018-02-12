@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/Styled Webpage/basic.css">
+		<title>JavaScript Intro</title>
+
+		
+
+	</head>
+
+	<body>
+		<h1 id="h1">My First JavaScript Page</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum lorem sit amet rutrum blandit. Phasellus sem ipsum, vestibulum viverra sapien a, tincidunt faucibus ipsum. Nam suscipit ornare consequat. Aenean rutrum sapien sed mauris gravida ultrices. Nam consectetur euismod nisi at mattis. Aenean vitae ullamcorper tellus. Morbi tincidunt tellus eget urna convallis, eget viverra augue tincidunt. Duis eget consectetur sapien, in dignissim enim. Quisque sodales sed nulla vitae aliquet.</p>
+
+
+		<button onclick = "redirectTo('/Styled Webpage/index.html')">Index Page</button>
+
+		<button type="button" onclick="changeColor()">Change Header Color</button>
+
+		<script type="text/javascript">
+			let date = new Date();
+			alert("Today's date is "+date);
+
+			function redirectTo(sUrl) {
+				window.location=sUrl
+			}
+			function changeColor(){
+				document.getElementById("h1").style.color = "magenta";
+			}
+		</script>
+
+	</body>
+</html>
