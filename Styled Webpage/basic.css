@@ -1,6 +1,38 @@
-@charset "utf-8";
-*{
-	font-family: helvetica
+<meta charset="utf-8">
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
 }
 p{
 	border-top: 5px solid;  
@@ -36,21 +68,4 @@ p{
     	50%{background-position:100% 19%}
     	100%{background-position:0% 82%}
 	}
-#button{
-	width: 6em;
-	border: 2px solid green;
-    background: #ffe;
-    border-radius: 5px;
-}
-a {
-    display: block;
-    width: 100%;
-    line-height: 2em;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-}
-a:hover {
-    color: red;
-    background: #eff;
 }
