@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/Styled Webpage/basic.css">
+		<title>JavaScript Looping</title>
+		<script>
+			var myObject = [
+			{"Title": "Redbone",
+			"Artist": "Childish Gambino",
+			"Album": '"Awaken, My Love!"',
+			"Genre": "R&B/Soul"},
+
+			{"Title": "Get You",
+			"Artist": "Daniel Caesar",
+			"Album": "Freudian",
+			"Genre": "R&B/Soul"},
+
+			{"Title": "Love Galore",
+			"Artist": "SZA",
+			"Album": "Ctrl",
+			"Genre": "R&B/Soul"},
+
+			{"Title": "Don't",
+			"Artist": "Bryson Tiller",
+			"Album": "TRAPSOUL",
+			"Genre": "R&B/Soul"},
+
+			{"Title": "Madonna",
+			"Artist": "Drake",
+			"Album": "If You're Reading This It's Too Late",
+			"Genre": "Hip-Hop/R&B"}
+		];
+		</script>
+	</head>
+
+<body>
+	<h2>My Music</h2><br>
+	<table border = "1" bgcolor = "magenta">
+		<thead bgcolor = "#808080">
+			<tr>
+				<th>Title</th>
+				<th>Artist</th>
+				<th>Album</th>
+				<th>Genre</th>
+			</tr>
+		</thead>
+			<tbody id = "playlist01" bgcolor = "#C8C8C8"></tbody>
+	</table>
+
+	<script>
+		var text = "";
+		for (var x in myObject) {
+			if(myObject.hasOwnProperty(x)){
+				var obj = myObject[x];
+				text += "<tr><td>" + 
+							obj["Title"] + "</td><td>" +
+							obj["Artist"] + "</td><td>" +
+							obj["Album"] + "</td><td>" +
+							obj["Genre"] + 
+							"</td></tr>";
+			}
+		}
+		document.getElementById("playlist01").innerHTML = text;
+	</script>
+</body>
+</html>
