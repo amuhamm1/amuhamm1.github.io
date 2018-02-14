@@ -33,34 +33,40 @@
 		</script>
 	</head>
 
-<body>
-	<h1>My Music</h1><br>
-	<table border = "1" bgcolor = "magenta">
-		<thead bgcolor = "#808080">
-			<tr>
-				<th>Title</th>
-				<th>Artist</th>
-				<th>Album</th>
-				<th>Genre</th>
-			</tr>
-		</thead>
-			<tbody id = "playlist01" bgcolor = "#C8C8C8"></tbody>
-	</table>
+	<body>
+		<div class="container">
+		<header><h1>JavaScript Looping</h1></header>
+		<article>
+			<h1>My Music</h1><br>
+			<table border = "1" bgcolor = "magenta">
+				<thead bgcolor = "#808080">
+					<tr>
+						<th>Title</th>
+						<th>Artist</th>
+						<th>Album</th>
+						<th>Genre</th>
+					</tr>
+				</thead>
+					<tbody id = "playlist01" bgcolor = "#C8C8C8"></tbody>
+			</table>
 
-	<script>
-		var text = "";
-		for (var x in myObject) {
-			if(myObject.hasOwnProperty(x)){
-				var obj = myObject[x];
-				text += "<tr><td>" + 
-							obj["Title"] + "</td><td>" +
-							obj["Artist"] + "</td><td>" +
-							obj["Album"] + "</td><td>" +
-							obj["Genre"] + 
-							"</td></tr>";
-			}
-		}
-		document.getElementById("playlist01").innerHTML = text;
-	</script>
+			<script>
+				var text = "";
+				for (var x in myObject) {
+					if(myObject.hasOwnProperty(x)){
+						var obj = myObject[x];
+						text += "<tr><td>" + 
+								obj["Title"] + "</td><td>" +
+								obj["Artist"] + "</td><td>" +
+								obj["Album"] + "</td><td>" +
+								obj["Genre"] + 
+								"</td></tr>";
+					}
+				}
+				document.getElementById("playlist01").innerHTML = text;
+			</script>
+		</article>
+		<footer>Done By: Asia Muhammad</footer>
+		</div>
 </body>
 </html>
