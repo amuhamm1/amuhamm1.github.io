@@ -9,31 +9,31 @@
 			"Artist": "Childish Gambino",
 			"Album": '"Awaken, My Love!"',
 			"Genre": "R&B/Soul",
-			"Time:": 5:27},
+			"Time": "5:27"},
 
 			{"Title": "Get You",
 			"Artist": "Daniel Caesar",
 			"Album": "Freudian",
 			"Genre": "R&B/Soul",
-			"Time:": 4:38},
+			"Time": "4:38"},
 
 			{"Title": "Love Galore",
 			"Artist": "SZA",
 			"Album": "Ctrl",
 			"Genre": "R&B/Soul",
-			"Time:": 4:35},
+			"Time": "4:35"},
 
 			{"Title": "Don't",
 			"Artist": "Bryson Tiller",
 			"Album": "TRAPSOUL",
 			"Genre": "R&B/Soul",
-			"Time:": 3:18},
+			"Time": "3:18"},
 
 			{"Title": "Madonna",
 			"Artist": "Drake",
 			"Album": "If You're Reading This It's Too Late",
 			"Genre": "Hip-Hop/R&B",
-			"Time:": 2:58}
+			"Time": "2:58"}
 		];
 		</script>
 	</head>
@@ -58,7 +58,18 @@
 						<th>Time</th>
 					</tr>
 				</thead>
-					<tbody id = "playlist01" bgcolor = "#C8C8C8"></tbody>
+					<tbody id = "playlist" bgcolor = "#C8C8C8"></tbody>
+			</table>
+			<h2>Statistics Table</h2>
+			<table border = "1" bgcolor = "magenta">
+				<thead bgcolor = "#808080">
+					<tr>
+						<th>Number of Songs</th>
+						<th>Number of Artists</th>
+						<th>Length of Playlist</th>
+					</tr>
+				</thead>
+					<tbody id = "playlistStatistics" bgcolor = "#C8C8C8"></tbody>
 			</table>
 
 			<script>
@@ -75,8 +86,9 @@
 								"</td></tr>";
 					}
 				}
-				document.getElementById("playlist01").innerHTML = text;
+				document.getElementById("playlist").innerHTML = text;
 			</script>
+
 		</article>
 		<footer>Done By: Asia Muhammad</footer>
 		</div>
