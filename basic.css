@@ -84,6 +84,6 @@ th {
     color: white;
 }
 
-tr:hover {
+tbody tr:hover {
     background-color: magenta;
 }
