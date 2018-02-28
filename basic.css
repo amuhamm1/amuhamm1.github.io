@@ -84,6 +84,6 @@ th {
     color: white;
 }
 
-#orgTable #orgStatistics tr:hover {
+tr:hover {
     background-color: magenta;
 }
