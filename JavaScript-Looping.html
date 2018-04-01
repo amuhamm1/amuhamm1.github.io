@@ -111,15 +111,18 @@ function lengthOfPlaylist(obj){
     }
     return count;
 }
+function statTable() {
+	var table2Contents = "";
 
-var table2Contents = "";
-
-table2Contents += "<tr><td>" + 
+	table2Contents += "<tr><td>" + 
                 count(myObject, 'Title') + "</td><td>" + 
                 count(myObject, 'Artist') + "</td><td>" +
                 lengthOfPlaylist(myObject)+ 
                  "</td></tr>";
-document.getElementById("playlistStatistics").innerHTML = table2Contents;
+	document.getElementById("playlistStatistics").innerHTML = table2Contents;
+}
+
+statTable();
 
 </script>
 
