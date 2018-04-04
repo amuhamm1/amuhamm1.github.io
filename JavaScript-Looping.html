@@ -90,34 +90,39 @@
 				document.getElementById("playlist").innerHTML = text;
 			</script>
 
-			<script>
+<script>
 
 function count(obj, objCol){
     var sum = 0;
     for (var i = 0; i < obj.length; i++) {
-        if (obj[i][objCol] !== obj[i+1][objCol]) {
-            sum++;
-        }
+        sum++;
     }
     return sum;
 }
 
-function lengthOfPlaylist(obj){
-    var count = 0;
-    for (var x in obj) {
-        if (obj.hasOwnProperty(x)) {
-            count++;
-        }
-    }
-    return count;
+function timeCalc(obj) {
+	var totTime = 0;
+	for (var i = 0; i < obj.length; i++) {
+		var min = obj[i]['Time'].split(":")[0];
+		var sec = obj[i]['Time'].split(":")[1];
+		
+		totTime += (min * 60) + (sec * 1);
+	}
+
+	totMin = Math.floor(totTime/60);
+	totSec = totTime%60;
+
+	return totMin + " minutes " + totSec + " seconds";
+
 }
+
 function statTable() {
 	var table2Contents = "";
 
 	table2Contents += "<tr><td>" + 
                 count(myObject, 'Title') + "</td><td>" + 
                 count(myObject, 'Artist') + "</td><td>" +
-                lengthOfPlaylist(myObject)+ 
+                timeCalc(myObject)+ 
                  "</td></tr>";
 	document.getElementById("playlistStatistics").innerHTML = table2Contents;
 }
