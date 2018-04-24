@@ -1726,6 +1726,28 @@ a {
     border-color: #e7ffff !important
 }
 
+/* Style the hero section */
+.hero-section {
+  background: url("/Volumes/DISK_IMG/College Stuff/UMD/SPRING 2018/INST377/Group Project/WebPage/umd library.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
 /* vietnamese */
 @font-face {
   font-family: 'Inconsolata';
